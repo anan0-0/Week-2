@@ -14,4 +14,11 @@ grpsize=int(input("Required group size? "))
 grps=stu//grpsize
 left=stu%grpsize
 print("If there are %d students in groups of %d,"%(stu,grpsize))
-print("There will be %d groups with %d student left over."%(grps,left))
+if (grps>1 and left>1):
+    print("There will be %d groups with %d students left over."%(grps,left))
+elif (grps>1):
+    print("There will be %d groups with %d student left over."%(grps,left))
+elif (left>1):
+    print("There will be %d group with %d students left over."%(grps,left))
+else:
+    print("There will be %d group with %d student left over."%(grps,left))
